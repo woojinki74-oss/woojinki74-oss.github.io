@@ -210,7 +210,7 @@ a{color:var(--green-d)}
 
 /* 캐릭터 */
 .char{
-  position:absolute;left:var(--x);bottom:var(--feet);width:var(--w);z-index:var(--z,3);
+  position:absolute;left:var(--x);bottom:calc(100% - var(--feet));width:var(--w);z-index:var(--z,3);
   transform:translateX(-50%);padding:0;margin:0;border:0;background:none;cursor:pointer;
   display:flex;flex-direction:column;align-items:center;gap:2px;
   -webkit-tap-highlight-color:transparent;font-family:inherit;
@@ -228,8 +228,8 @@ a{color:var(--green-d)}
 .char.sel img{transform:translateY(-2px) scale(1.03);animation-play-state:paused}
 
 /* 좌석 (데스크톱) */
-.char.seat-1{--x:29%;--feet:37.5%;--w:8.6%;--z:1}
-.char.seat-2{--x:71%;--feet:37.5%;--w:8.6%;--z:1}
+.char.seat-1{--x:29%;--feet:37.5%;--w:8.6%;--z:3}
+.char.seat-2{--x:71%;--feet:37.5%;--w:8.6%;--z:3}
 .char.seat-3{--x:11%;--feet:72%;--w:9.6%;--z:3}
 .char.seat-4{--x:89%;--feet:72%;--w:9.6%;--z:3}
 .char.seat-5{--x:27.5%;--feet:93%;--w:10.2%;--z:4}
