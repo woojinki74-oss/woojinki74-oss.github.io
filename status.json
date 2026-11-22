@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "company": "민상파파 컴퍼니",
- "tagline": "가상 사무실 · AI 팀장 6명 + 청약 공지",
+ "tagline": "원형 회의실 · AI 팀장 6명 + 성남 청약·혜택 공지",
  "updated": "2026-11-22T09:20:00+09:00",
  "headline": "인스타 팀장 신설 — 쇼츠 15초를 릴스로 올려 #성남눈썹문신 모객 · 쇼츠 댓글 매시간 확인 중 · 다음 09:30 성남 청약 공지",
  "employees": [
@@ -9,14 +9,12 @@
    "id": "blog",
    "name": "블로그 팀장",
    "emoji": "📝",
-   "sprite": "sprites/blog.png",
+   "sprite": "sprites/blog.svg",
+   "seat": 3,
    "state": "waiting",
    "stateLabel": "11:00 대기",
    "bubble": "오늘 11:00 초안 + 이웃 5명",
    "role": "네이버 블로그(woojinki) 글 발행과 이웃 소통을 맡는 팀장입니다.",
-   "x": 10.0,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "매일 11:00",
@@ -51,14 +49,12 @@
    "id": "shorts",
    "name": "유튜브 팀장",
    "emoji": "🎬",
-   "sprite": "sprites/shorts.png",
+   "sprite": "sprites/shorts.svg",
+   "seat": 1,
    "state": "running",
    "stateLabel": "매시간 확인",
    "bubble": "쇼츠 1·2탄 새 댓글·문의 감시",
-   "role": "성남뷰티(@woojinki74) 쇼츠 제작과 채널 운영을 맡는 팀장입니다.",
-   "x": 23.2,
-   "feet": 79,
-   "h": 24,
+   "role": "성남분당뷰티(@woojinki74) 쇼츠 제작과 채널 운영을 맡는 팀장입니다.",
    "schedule": [
     {
      "time": "매시간",
@@ -89,7 +85,7 @@
      "url": "https://studio.youtube.com"
     },
     {
-     "label": "성남뷰티 채널",
+     "label": "성남분당뷰티 채널",
      "url": "https://www.youtube.com/@woojinki74"
     }
    ]
@@ -98,14 +94,12 @@
    "id": "insta",
    "name": "인스타 팀장",
    "emoji": "📸",
-   "sprite": "sprites/insta.png",
+   "sprite": "sprites/insta.svg",
+   "seat": 2,
    "state": "waiting",
    "stateLabel": "로그인 준비 중",
    "bubble": "릴스 15초 + #성남눈썹문신",
    "role": "인스타그램(@woojinki74) 릴스에 유튜브 쇼츠와 똑같은 15초 영상을 올려 #성남눈썹문신 시술 문의를 모으는 팀장입니다.",
-   "x": 36.4,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "쇼츠 나올 때마다",
@@ -122,7 +116,7 @@
    ],
    "details": [
     "지금 @woojinki74 계정 로그인과 단장(프로필 사진·소개·링크)을 준비 중입니다. 로그인이 풀리면 첫 릴스는 대표님 승인을 받고 올립니다.",
-    "릴스 문구는 쇼츠와 같게 — 15~20만 원대 · 성남 방문·출장 가능 · 문의 카톡 richpapa74, '자연눈썹' 대신 '눈썹문신'만 씁니다.",
+    "릴스 문구는 쇼츠와 같게 — 15~20만 원대 · 성남 방문·출장 가능 · 문의는 카톡, '자연눈썹' 대신 '눈썹문신'만 씁니다.",
     "고객 사진은 얼굴 전체가 나오지 않게 눈·눈썹만 잘라서 씁니다.",
     "해시태그는 #성남눈썹문신 #성남눈썹 #눈썹문신 처럼 지역·시술 태그 위주로 답니다."
    ],
@@ -141,14 +135,12 @@
    "id": "coupang",
    "name": "쿠팡 파트너스 팀장",
    "emoji": "🛒",
-   "sprite": "sprites/coupang.png",
+   "sprite": "sprites/coupang.svg",
+   "seat": 4,
    "state": "waiting",
    "stateLabel": "반영 완료",
    "bubble": "쇼츠 1·2탄 링크 4종 반영 완료",
    "role": "쿠팡 파트너스(AF9578211) 제휴 링크로 수익을 만드는 팀장입니다.",
-   "x": 49.6,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "쇼츠 올릴 때마다",
@@ -180,14 +172,12 @@
    "id": "trials",
    "name": "체험단 정리 팀장",
    "emoji": "✍️",
-   "sprite": "sprites/trials.png",
+   "sprite": "sprites/trials.svg",
+   "seat": 5,
    "state": "check",
    "stateLabel": "당첨 확인 D-2",
    "bubble": "11/24 파티온 발표",
    "role": "체험단 신청과 당첨 확인, 매일 포인트 적립을 정리하는 팀장입니다.",
-   "x": 62.8,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "매일 10:00",
@@ -229,14 +219,12 @@
    "id": "inquiry",
    "name": "눈썹 시술 팀장",
    "emoji": "💬",
-   "sprite": "sprites/inquiry.png",
+   "sprite": "sprites/inquiry.svg",
+   "seat": 6,
    "state": "running",
    "stateLabel": "10분마다 감시",
    "bubble": "블로그 새 댓글 문의 확인 중 · 0건",
    "role": "블로그 글 3편의 새 댓글에서 시술 문의를 찾아내는 팀장입니다.",
-   "x": 76.0,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "10분마다",
@@ -245,7 +233,7 @@
    ],
    "details": [
     "감시 중인 글 3편 — 224483175691 · 224484454698 · 224485786530",
-    "안내 문구 — 성남 방문 출장도 가능 · 15~20만 원대 · 카톡 ID richpapa74",
+    "안내 문구 — 성남 방문 출장도 가능 · 15~20만 원대 · 문의는 카톡으로",
     "고객 사진은 얼굴 전체가 나오지 않게 눈·눈썹만 잘라서 씁니다.",
     "유튜브 쇼츠 댓글 문의는 유튜브 팀장이, 인스타 릴스 댓글·DM은 인스타 팀장이 확인합니다."
    ],
@@ -264,14 +252,12 @@
    "id": "housing",
    "name": "성남 청약·혜택 공지",
    "emoji": "📢",
-   "sprite": "sprites/housing.png",
+   "sprite": "sprites/housing.svg",
+   "seat": 7,
    "state": "waiting",
    "stateLabel": "09:30 예정",
    "bubble": "09:30 임대 공고 확인",
    "role": "성남과 경기 남부 무주택 임대 청약 공고를 확인해 대표님께 알려 드리는 공지입니다. 팀이 아니라 매일 09:30 올라오는 알림입니다.",
-   "x": 89.2,
-   "feet": 79,
-   "h": 24,
    "schedule": [
     {
      "time": "매일 09:30",
