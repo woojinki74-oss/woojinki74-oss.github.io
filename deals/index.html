@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>살림픽 · 오늘의 특가 모음</title>
+<meta name="description" content="쇼츠·릴스에서 소개한 오늘의 특가 2종을 한 페이지에 모았습니다. 전기요와 미니 가습기 특가를 바로 확인하세요.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233FA45F'/%3E%3Cpath d='M46 18c0 14-8 24-22 24-2 0-4-.3-6-.9C18.9 30 27 20 46 18Z' fill='%23EAF7EC'/%3E%3Cpath d='M20 46c4-9 10-15 18-19' stroke='%23EAF7EC' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FCF7EC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="살림픽 · 오늘의 특가 모음">
+<meta property="og:description" content="오늘 소개한 특가 2종 — 탄소열선 전기요 62% 할인, UV 살균 미니 가습기.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+:root{
+  --cream:#FCF7EC;
+  --card:#FFFFFF;
+  --ink:#33302A;
+  --ink2:#6F6859;
+  --ink3:#A29A89;
+  --line:#EFE5D2;
+  --green:#3FA45F;
+  --green-d:#2C7C46;
+  --green-l:#EAF7EC;
+  --warm:#E4735C;
+  --amber:#E9A93C;
+  --blue:#3C8FBF;
+  --sh:0 8px 24px rgba(126,105,68,.10);
+  --sh2:0 3px 10px rgba(126,105,68,.08);
+  --fp:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--fp);color:var(--ink);
+  background:
+    radial-gradient(760px 380px at 10% -10%, #F6EBD3 0%, rgba(246,235,211,0) 72%),
+    radial-gradient(700px 420px at 94% 0%, #E8F4E6 0%, rgba(232,244,230,0) 70%),
+    var(--cream);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  min-height:100dvh;
+  padding:0 0 34px;
+  word-break:keep-all;
+}
+a{color:var(--green-d);text-decoration:none}
+.wrap{max-width:520px;margin:0 auto;padding:0 16px}
+
+/* ---------- header ---------- */
+.hero{padding:22px 0 14px;text-align:center}
+.brandline{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 12px 6px 8px;box-shadow:var(--sh2)}
+.brandline .dot{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(150deg,#4FB46D,#2E8B4E)}
+.brandline .dot svg{width:12px;height:12px;display:block}
+.brandline span{font-size:12.5px;font-weight:800;letter-spacing:-.2px;color:#43503F}
+.hero h1{margin:12px 0 0;font-size:clamp(24px,7.4vw,30px);line-height:1.24;letter-spacing:-1px;font-weight:800;color:#2F3A31}
+.hero h1 em{font-style:normal;color:var(--green-d)}
+.hero p{margin:8px 0 0;font-size:13.5px;line-height:1.6;color:var(--ink2)}
+.hero .meta{margin-top:11px;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:#8A8271;background:rgba(255,255,255,.7);border:1px dashed var(--line);border-radius:8px;padding:5px 9px}
+
+/* ---------- section label ---------- */
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:20px 2px 10px}
+.sechead h2{margin:0;font-size:15px;font-weight:800;letter-spacing:-.4px;color:#3A4339}
+.sechead .cnt{font-size:11.5px;font-weight:700;color:var(--ink3)}
+
+/* ---------- card ---------- */
+.card{
+  background:var(--card);border:1.5px solid var(--line);border-radius:22px;
+  box-shadow:var(--sh);overflow:hidden;margin-bottom:16px;
+}
+.thumb{position:relative;height:196px;overflow:hidden;display:block}
+.thumb svg{width:100%;height:100%;display:block}
+.badge{
+  position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:5px;
+  background:linear-gradient(140deg,#F0603F,#D8402A);color:#fff;border-radius:10px;
+  padding:6px 10px;font-size:12px;font-weight:800;letter-spacing:-.2px;
+  box-shadow:0 6px 14px rgba(200,60,30,.26);
+}
+.badge .num{font-size:15px;line-height:1;font-variant-numeric:tabular-nums}
+.rank{
+  position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(255,255,255,.92);color:#5A6355;
+  font-size:12px;font-weight:800;border:1.5px solid rgba(255,255,255,.9);box-shadow:var(--sh2)
+}
+.body{padding:16px 16px 18px}
+.pname{margin:0;font-size:17px;line-height:1.42;font-weight:800;letter-spacing:-.5px;color:#2C342C}
+.pname small{display:block;margin-top:4px;font-size:12px;font-weight:600;color:var(--ink3);letter-spacing:0}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin:11px 0 0}
+.price .off{font-size:22px;font-weight:800;color:var(--warm);letter-spacing:-.6px}
+.price .now{font-size:22px;font-weight:800;color:#22271F;letter-spacing:-.7px;font-variant-numeric:tabular-nums}
+.price .was{font-size:13px;font-weight:600;color:#B0A894;text-decoration:line-through;font-variant-numeric:tabular-nums}
+.price .save{margin-left:auto;font-size:11.5px;font-weight:800;color:#2C7C46;background:var(--green-l);border-radius:7px;padding:4px 7px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:11.5px;font-weight:700;color:#5C6457;background:#F7F4EC;border:1px solid #EDE6D8;border-radius:999px;padding:5px 9px}
+.chip.star{color:#8A6416;background:#FDF3DE;border-color:#F3E3BE}
+.points{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.points li{position:relative;padding-left:17px;font-size:12.8px;line-height:1.55;color:var(--ink2)}
+.points li::before{content:"";position:absolute;left:2px;top:7px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.cta{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  margin-top:16px;min-height:56px;width:100%;
+  border-radius:16px;background:linear-gradient(160deg,#46AF66,#2C7C46);color:#fff;
+  font-size:16.5px;font-weight:800;letter-spacing:-.4px;
+  box-shadow:0 8px 18px rgba(44,124,70,.26);
+  transition:transform .12s ease, box-shadow .12s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.cta svg{width:16px;height:16px;flex:none}
+.cta:active{transform:translateY(1px) scale(.995);box-shadow:0 4px 12px rgba(44,124,70,.22)}
+.cta.coupang{background:linear-gradient(160deg,#4E8FE0,#2C62B4);box-shadow:0 8px 18px rgba(44,98,180,.24)}
+.cta.coupang:active{box-shadow:0 4px 12px rgba(44,98,180,.2)}
+.under{display:block;margin-top:9px;text-align:center;font-size:11px;color:var(--ink3);font-weight:600}
+
+/* ---------- notes ---------- */
+.notice{
+  background:rgba(255,255,255,.72);border:1.5px dashed var(--line);border-radius:16px;
+  padding:13px 14px;margin:20px 0 0;
+}
+.notice strong{display:block;font-size:12px;font-weight:800;color:#4E5648;margin-bottom:6px}
+.notice p{margin:0;font-size:11.8px;line-height:1.7;color:var(--ink2)}
+
+/* ---------- footer ---------- */
+footer{margin-top:18px;padding:0 2px;text-align:center}
+.disclosure{
+  font-size:11.5px;line-height:1.7;color:#7C7565;background:#fff;
+  border:1.5px solid var(--line);border-radius:14px;padding:12px 13px;text-align:left;
+}
+.disclosure b{color:#555C4E;font-weight:800}
+.copy{margin-top:14px;font-size:11px;color:#B3AB99;font-weight:600}
+@media (max-width:359px){
+  .thumb{height:168px}
+  .cta{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="brandline">
+      <span class="dot" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M19 4c0 9-5 15-14 15-1.2 0-2.4-.2-3.5-.6C3.1 9.9 8.2 4 19 4Z" fill="#EAF7EC"/><path d="M4 21c2.4-6 6-10 11-13" stroke="#EAF7EC" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      <span>살림픽</span>
+    </div>
+    <h1>오늘의 <em>특가</em> 모음</h1>
+    <p>영상에서 보고 오셨다면, 아래 두 상품만 눌러 주세요.<br>오늘 가장 반응 좋았던 생활템 2종입니다.</p>
+    <div class="meta">2026. 11. 25 기준 · 매일 업데이트</div>
+  </header>
+
+  <div class="sechead">
+    <h2>오늘의 특가</h2>
+    <span class="cnt">2개 상품</span>
+  </div>
+
+  <!-- ===== 1. 한일 탄소열선 전기요 ===== -->
+  <article class="card">
+    <div class="thumb" role="img" aria-label="한일 탄소열선 전기요 일러스트">
+      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FDEBD9"/><stop offset="55%" stop-color="#F8D9C0"/><stop offset="100%" stop-color="#F2C7AE"/>
+          </linearGradient>
+          <linearGradient id="blanket" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F6A582"/><stop offset="100%" stop-color="#E4735C"/>
+          </linearGradient>
+          <linearGradient id="warmline" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#F0603F" stop-opacity="0"/><stop offset="50%" stop-color="#D8402A" stop-opacity=".75"/><stop offset="100%" stop-color="#F0603F" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="200" fill="url(#bg1)"/>
+        <circle cx="430" cy="36" r="46" fill="#FFF3E6" opacity=".65"/>
+        <circle cx="78" cy="168" r="58" fill="#FFF3E6" opacity=".5"/>
+        <!-- heat waves -->
+        <g stroke="url(#warmline)" stroke-width="3.4" fill="none" stroke-linecap="round">
+          <path d="M188 74c10-11 22-11 32 0s22 11 32 0"/>
+          <path d="M196 56c8-9 18-9 26 0s18 9 26 0"/>
+          <path d="M204 39c6-7 14-7 20 0s14 7 20 0"/>
+        </g>
+        <!-- folded blanket -->
+        <g>
+          <rect x="150" y="88" width="230" height="86" rx="20" fill="#C9573F" opacity=".22"/>
+          <rect x="144" y="80" width="228" height="84" rx="19" fill="url(#blanket)"/>
+          <rect x="144" y="80" width="228" height="26" rx="13" fill="#F7B79B"/>
+          <g stroke="#D25C42" stroke-width="1.5" opacity=".55">
+            <path d="M176 106v58M206 106v58M236 106v58M266 106v58M296 106v58M326 106v58"/>
+            <path d="M144 132h228M144 158h228"/>
+          </g>
+          <rect x="144" y="80" width="228" height="84" rx="19" fill="none" stroke="#C9563C" stroke-width="2.6" opacity=".55"/>
+          <!-- plug/cord -->
+          <path d="M372 140c22 2 34 12 34 26" stroke="#8E5B4A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".55"/>
+          <rect x="396" y="160" width="20" height="14" rx="4" fill="#8E5B4A" opacity=".55"/>
+        </g>
+        <!-- snowflake badge -->
+        <g transform="translate(404,84)">
+          <circle r="26" fill="#fff" opacity=".9"/>
+          <g stroke="#3C8FBF" stroke-width="2.6" stroke-linecap="round">
+            <path d="M0-13V13M-11-6.5L11 6.5M-11 6.5L11-6.5"/>
+          </g>
+        </g>
+      </svg>
+      <span class="badge"><span class="num">62%</span> 할인</span>
+      <span class="rank">1</span>
+    </div>
+    <div class="body">
+      <h3 class="pname">
+        한일 탄소열선 전기요
+        <small>L 사이즈 135 × 180cm · 겨울 침대용</small>
+      </h3>
+      <div class="price">
+        <span class="off">62%</span>
+        <span class="now">30,940원</span>
+        <span class="was">82,300원</span>
+        <span class="save">51,360원 절약</span>
+      </div>
+      <div class="chips">
+        <span class="chip star">★ 평점 4.6</span>
+        <span class="chip">리뷰 7.8만</span>
+        <span class="chip">탄소열선</span>
+        <span class="chip">135 × 180cm</span>
+      </div>
+      <ul class="points">
+        <li>리뷰 7.8만 개에 평점 4.6 — 겨울마다 가장 많이 팔리는 전기요입니다.</li>
+        <li>탄소열선이라 예열이 빠르고, 온도가 고르게 퍼집니다.</li>
+        <li>1인용보다 넉넉한 L 사이즈(135×180cm)로 침대에 깔기 좋습니다.</li>
+      </ul>
+      <a class="cta coupang" href="https://link.coupang.com/a/iV2Pq375fo" target="_blank" rel="noopener noreferrer sponsored">
+        특가 보러가기
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <span class="under">쿠팡에서 62% 할인가로 열립니다</span>
+    </div>
+  </article>
+
+  <!-- ===== 2. 일리안 UV 스텐 무선 미니 가습기 ===== -->
+  <article class="card">
+    <div class="thumb" role="img" aria-label="일리안 UV 스텐 무선 미니 가습기 일러스트">
+      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E3F1F6"/><stop offset="60%" stop-color="#D6E9F0"/><stop offset="100%" stop-color="#C9E3EC"/>
+          </linearGradient>
+          <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F7FAFB"/><stop offset="42%" stop-color="#DDE6EA"/><stop offset="70%" stop-color="#C3CFD5"/><stop offset="100%" stop-color="#E8EEF1"/>
+          </linearGradient>
+          <linearGradient id="mist" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="70%" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="200" fill="url(#bg2)"/>
+        <circle cx="102" cy="44" r="52" fill="#F2FAFD" opacity=".8"/>
+        <circle cx="442" cy="160" r="60" fill="#EAF6FB" opacity=".55"/>
+        <!-- mist -->
+        <ellipse cx="260" cy="86" rx="26" ry="16" fill="url(#mist)"/>
+        <g fill="#fff" opacity=".9">
+          <circle cx="248" cy="70" r="6"/><circle cx="268" cy="62" r="8"/><circle cx="252" cy="48" r="5"/>
+          <circle cx="274" cy="42" r="4"/><circle cx="238" cy="36" r="3.4"/><circle cx="262" cy="26" r="2.6"/>
+        </g>
+        <!-- body -->
+        <rect x="226" y="84" width="68" height="82" rx="26" fill="url(#steel)" stroke="#B3C2C9" stroke-width="2"/>
+        <rect x="232" y="92" width="10" height="60" rx="5" fill="#fff" opacity=".75"/>
+        <rect x="226" y="84" width="68" height="16" rx="8" fill="#EDF3F5" opacity=".9"/>
+        <!-- UV glow -->
+        <g transform="translate(260,120)">
+          <circle r="20" fill="#7FB6E8" opacity=".22"/>
+          <circle r="13" fill="#8FC1EC" opacity=".35"/>
+          <circle r="7" fill="#5FA8E0" opacity=".85"/>
+        </g>
+        <text x="260" y="152" text-anchor="middle" font-size="10" font-weight="700" fill="#8FA3AD" font-family="Pretendard,sans-serif" letter-spacing="1">U V</text>
+        <!-- base -->
+        <rect x="216" y="164" width="88" height="12" rx="6" fill="#AEBEC6"/>
+        <rect x="216" y="164" width="88" height="5" rx="2.5" fill="#C8D5DA"/>
+        <!-- droplet -->
+        <g transform="translate(176,124)" opacity=".8">
+          <path d="M0-16c6 8 12 14 12 20a12 12 0 0 1-24 0c0-6 6-12 12-20Z" fill="#5EA9D6"/>
+          <circle cx="-4" cy="6" r="2.6" fill="#fff" opacity=".8"/>
+        </g>
+        <!-- wifi / wireless -->
+        <g transform="translate(352,120)" stroke="#4E9BC4" stroke-width="3" fill="none" stroke-linecap="round">
+          <path d="M-14 4a20 20 0 0 1 28 0" opacity=".9"/>
+          <path d="M-8 12a12 12 0 0 1 16 0" opacity=".6"/>
+          <circle cx="0" cy="20" r="2.4" fill="#4E9BC4" stroke="none"/>
+        </g>
+      </svg>
+      <span class="badge" style="background:linear-gradient(140deg,#3C8FBF,#276B93);box-shadow:0 6px 14px rgba(39,107,147,.26)">무선 · UV 살균</span>
+      <span class="rank">2</span>
+    </div>
+    <div class="body">
+      <h3 class="pname">
+        일리안 UV 스텐 무선 미니 가습기
+        <small>스테인리스 물통 · 살균 UV램프 · 책상 위 미니 사이즈</small>
+      </h3>
+      <div class="price">
+        <span class="now">39,000원</span>
+      </div>
+      <div class="chips">
+        <span class="chip">리뷰 4,650</span>
+        <span class="chip">살균 UV램프</span>
+        <span class="chip">스텐 물통</span>
+        <span class="chip">무선 사용</span>
+      </div>
+      <ul class="points">
+        <li>스테인리스 물통에 살균 UV램프까지 — 물때 걱정을 줄인 가습기입니다.</li>
+        <li>무선이라 책상·침대 머리맡 어디로든 옮겨 놓을 수 있습니다.</li>
+        <li>리뷰 4,650개로 미니 가습기 중 반응이 꾸준한 모델입니다.</li>
+      </ul>
+      <a class="cta" href="https://naver.me/xm0SKgUy" target="_blank" rel="noopener noreferrer sponsored">
+        특가 보러가기
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <span class="under">네이버에서 39,000원에 열립니다</span>
+    </div>
+  </article>
+
+  <div class="notice">
+    <strong>누르기 전에 한 가지만 확인해 주세요</strong>
+    <p>가격·재고·배송 조건은 시간이 지나면 달라질 수 있어요. 결제 화면에서 최종 금액을 꼭 확인해 주세요. 쿠팡 상품은 로켓배송 여부에 따라 도착일이 달라집니다.</p>
+  </div>
+
+  <footer>
+    <div class="disclosure">
+      <b>대가성 안내</b><br>
+      이 페이지의 링크는 쿠팡 파트너스 및 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 일정액의 수수료를 제공받습니다.
+    </div>
+    <div class="copy">살림픽 · 오늘의 특가 모음</div>
+  </footer>
+
+</div>
+</body>
+</html>
