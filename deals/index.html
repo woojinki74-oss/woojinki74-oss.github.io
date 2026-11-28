@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>살림픽 · 오늘의 특가 모음</title>
-<meta name="description" content="쇼츠·릴스에서 소개한 오늘의 특가 2종을 한 페이지에 모았습니다. 전기요와 미니 가습기 특가를 바로 확인하세요.">
+<meta name="description" content="영상에서 소개한 오늘의 특가 5종을 한 페이지에 모았습니다. 방풍비닐·문풍지·텀블러·어드벤트 캘린더·보온도시락, 쿠팡과 네이버 링크를 바로 확인하세요.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233FA45F'/%3E%3Cpath d='M46 18c0 14-8 24-22 24-2 0-4-.3-6-.9C18.9 30 27 20 46 18Z' fill='%23EAF7EC'/%3E%3Cpath d='M20 46c4-9 10-15 18-19' stroke='%23EAF7EC' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#FCF7EC">
 <meta property="og:type" content="website">
 <meta property="og:title" content="살림픽 · 오늘의 특가 모음">
-<meta property="og:description" content="오늘 소개한 특가 2종 — 탄소열선 전기요 62% 할인, UV 살균 미니 가습기.">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:description" content="오늘 소개한 생활 특가 5종 — 방풍비닐 14,800원 · 문풍지 5,900원 · 텀블러 1.2L 33,800원 · 어드벤트 캘린더 26,900원 · 보온도시락 21,750원">
+<meta name="twitter:card" content="summary">
 <style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 :root{
@@ -23,9 +23,7 @@
   --green:#3FA45F;
   --green-d:#2C7C46;
   --green-l:#EAF7EC;
-  --warm:#E4735C;
-  --amber:#E9A93C;
-  --blue:#3C8FBF;
+  --warm:#D9553E;
   --sh:0 8px 24px rgba(126,105,68,.10);
   --sh2:0 3px 10px rgba(126,105,68,.08);
   --fp:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,system-ui,sans-serif;
@@ -48,7 +46,7 @@ a{color:var(--green-d);text-decoration:none}
 .wrap{max-width:520px;margin:0 auto;padding:0 16px}
 
 /* ---------- header ---------- */
-.hero{padding:22px 0 14px;text-align:center}
+.hero{padding:22px 0 12px;text-align:center}
 .brandline{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 12px 6px 8px;box-shadow:var(--sh2)}
 .brandline .dot{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(150deg,#4FB46D,#2E8B4E)}
 .brandline .dot svg{width:12px;height:12px;display:block}
@@ -57,6 +55,16 @@ a{color:var(--green-d);text-decoration:none}
 .hero h1 em{font-style:normal;color:var(--green-d)}
 .hero p{margin:8px 0 0;font-size:13.5px;line-height:1.6;color:var(--ink2)}
 .hero .meta{margin-top:11px;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:#8A8271;background:rgba(255,255,255,.7);border:1px dashed var(--line);border-radius:8px;padding:5px 9px}
+
+/* ---------- disclosure (top) ---------- */
+.ad-note{
+  display:flex;gap:8px;align-items:flex-start;
+  background:#FFFDF7;border:1.5px solid #F0E2C6;border-radius:12px;
+  padding:9px 11px;margin:14px 0 0;
+  font-size:11.5px;line-height:1.6;color:#7A6C4E;font-weight:600;
+}
+.ad-note b{color:#6A5B3C;font-weight:800}
+.ad-note .tag{flex:none;font-size:10px;font-weight:800;color:#8A6A1F;background:#FBEFCF;border-radius:6px;padding:3px 6px;line-height:1.25}
 
 /* ---------- section label ---------- */
 .sechead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:20px 2px 10px}
@@ -68,48 +76,54 @@ a{color:var(--green-d);text-decoration:none}
   background:var(--card);border:1.5px solid var(--line);border-radius:22px;
   box-shadow:var(--sh);overflow:hidden;margin-bottom:16px;
 }
-.thumb{position:relative;height:196px;overflow:hidden;display:block}
-.thumb svg{width:100%;height:100%;display:block}
+.thumb{position:relative;display:block;aspect-ratio:4/3;background:#fff;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:contain;display:block}
 .badge{
   position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:5px;
   background:linear-gradient(140deg,#F0603F,#D8402A);color:#fff;border-radius:10px;
   padding:6px 10px;font-size:12px;font-weight:800;letter-spacing:-.2px;
   box-shadow:0 6px 14px rgba(200,60,30,.26);
 }
-.badge .num{font-size:15px;line-height:1;font-variant-numeric:tabular-nums}
+.badge.alt{background:linear-gradient(140deg,#3C8FBF,#276B93);box-shadow:0 6px 14px rgba(39,107,147,.26)}
 .rank{
   position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;
-  display:grid;place-items:center;background:rgba(255,255,255,.92);color:#5A6355;
+  display:grid;place-items:center;background:rgba(255,255,255,.95);color:#5A6355;
   font-size:12px;font-weight:800;border:1.5px solid rgba(255,255,255,.9);box-shadow:var(--sh2)
 }
-.body{padding:16px 16px 18px}
-.pname{margin:0;font-size:17px;line-height:1.42;font-weight:800;letter-spacing:-.5px;color:#2C342C}
+.body{padding:15px 16px 17px}
+.kicker{margin:0 0 5px;font-size:11.5px;font-weight:800;color:var(--green-d);letter-spacing:-.1px}
+.pname{margin:0;font-size:17px;line-height:1.4;font-weight:800;letter-spacing:-.5px;color:#2C342C}
 .pname small{display:block;margin-top:4px;font-size:12px;font-weight:600;color:var(--ink3);letter-spacing:0}
 .price{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin:11px 0 0}
-.price .off{font-size:22px;font-weight:800;color:var(--warm);letter-spacing:-.6px}
+.price .off{font-size:21px;font-weight:800;color:var(--warm);letter-spacing:-.6px}
 .price .now{font-size:22px;font-weight:800;color:#22271F;letter-spacing:-.7px;font-variant-numeric:tabular-nums}
 .price .was{font-size:13px;font-weight:600;color:#B0A894;text-decoration:line-through;font-variant-numeric:tabular-nums}
 .price .save{margin-left:auto;font-size:11.5px;font-weight:800;color:#2C7C46;background:var(--green-l);border-radius:7px;padding:4px 7px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
 .chip{font-size:11.5px;font-weight:700;color:#5C6457;background:#F7F4EC;border:1px solid #EDE6D8;border-radius:999px;padding:5px 9px}
 .chip.star{color:#8A6416;background:#FDF3DE;border-color:#F3E3BE}
-.points{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.points{margin:11px 0 0;padding:0;list-style:none;display:grid;gap:6px}
 .points li{position:relative;padding-left:17px;font-size:12.8px;line-height:1.55;color:var(--ink2)}
 .points li::before{content:"";position:absolute;left:2px;top:7px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.btns{display:grid;gap:8px;margin-top:15px}
+.btns.two{grid-template-columns:1fr 1fr}
 .cta{
-  display:flex;align-items:center;justify-content:center;gap:7px;
-  margin-top:16px;min-height:56px;width:100%;
-  border-radius:16px;background:linear-gradient(160deg,#46AF66,#2C7C46);color:#fff;
-  font-size:16.5px;font-weight:800;letter-spacing:-.4px;
-  box-shadow:0 8px 18px rgba(44,124,70,.26);
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  min-height:54px;width:100%;border-radius:15px;
+  background:linear-gradient(160deg,#46AF66,#2C7C46);color:#fff;
+  font-size:16px;font-weight:800;letter-spacing:-.4px;
+  box-shadow:0 8px 18px rgba(44,124,70,.24);
   transition:transform .12s ease, box-shadow .12s ease;
   -webkit-tap-highlight-color:transparent;
 }
-.cta svg{width:16px;height:16px;flex:none}
-.cta:active{transform:translateY(1px) scale(.995);box-shadow:0 4px 12px rgba(44,124,70,.22)}
-.cta.coupang{background:linear-gradient(160deg,#4E8FE0,#2C62B4);box-shadow:0 8px 18px rgba(44,98,180,.24)}
-.cta.coupang:active{box-shadow:0 4px 12px rgba(44,98,180,.2)}
-.under{display:block;margin-top:9px;text-align:center;font-size:11px;color:var(--ink3);font-weight:600}
+.btns.two .cta{font-size:15px;min-height:52px}
+.cta svg{width:15px;height:15px;flex:none}
+.cta:active{transform:translateY(1px) scale(.995);box-shadow:0 4px 12px rgba(44,124,70,.2)}
+.cta.coupang{background:linear-gradient(160deg,#4E8FE0,#2C62B4);box-shadow:0 8px 18px rgba(44,98,180,.22)}
+.cta.coupang:active{box-shadow:0 4px 12px rgba(44,98,180,.18)}
+.cta.price2{display:flex;flex-direction:column;gap:1px;line-height:1.2}
+.cta .pl{font-size:10.5px;font-weight:700;opacity:.9}
+.under{display:block;margin-top:9px;text-align:center;font-size:11px;color:var(--ink3);font-weight:600;line-height:1.5}
 
 /* ---------- notes ---------- */
 .notice{
@@ -120,7 +134,7 @@ a{color:var(--green-d);text-decoration:none}
 .notice p{margin:0;font-size:11.8px;line-height:1.7;color:var(--ink2)}
 
 /* ---------- footer ---------- */
-footer{margin-top:18px;padding:0 2px;text-align:center}
+footer{margin-top:16px;padding:0 2px;text-align:center}
 .disclosure{
   font-size:11.5px;line-height:1.7;color:#7C7565;background:#fff;
   border:1.5px solid var(--line);border-radius:14px;padding:12px 13px;text-align:left;
@@ -128,8 +142,9 @@ footer{margin-top:18px;padding:0 2px;text-align:center}
 .disclosure b{color:#555C4E;font-weight:800}
 .copy{margin-top:14px;font-size:11px;color:#B3AB99;font-weight:600}
 @media (max-width:359px){
-  .thumb{height:168px}
-  .cta{font-size:15.5px}
+  .cta{font-size:15px}
+  .btns.two .cta{font-size:13.5px}
+  .price .now{font-size:20px}
 }
 </style>
 </head>
@@ -144,212 +159,236 @@ footer{margin-top:18px;padding:0 2px;text-align:center}
       <span>살림픽</span>
     </div>
     <h1>오늘의 <em>특가</em> 모음</h1>
-    <p>영상에서 보고 오셨다면, 아래 두 상품만 눌러 주세요.<br>오늘 가장 반응 좋았던 생활템 2종입니다.</p>
-    <div class="meta">2026. 11. 25 기준 · 매일 업데이트</div>
+    <p>영상에서 보고 오셨다면, 아래 상품만 눌러 주세요.<br>오늘 소개한 생활 특가 5종을 한 페이지에 모았습니다.</p>
+    <div class="meta">2026. 11. 28 기준 · 매일 업데이트</div>
   </header>
+
+  <div class="ad-note">
+    <span class="tag">광고</span>
+    <span><b>이 페이지는 쿠팡 파트너스 및 네이버 쇼핑 커넥트 활동의 일환으로, 일정액의 수수료를 제공받습니다.</b> 구매 가격은 달라지지 않습니다.</span>
+  </div>
 
   <div class="sechead">
     <h2>오늘의 특가</h2>
-    <span class="cnt">2개 상품</span>
+    <span class="cnt">5개 상품</span>
   </div>
 
-  <!-- ===== 1. 한일 탄소열선 전기요 ===== -->
+  <!-- ===== 1. 밀스턴 PEVA 북극방풍비닐 ===== -->
   <article class="card">
-    <div class="thumb" role="img" aria-label="한일 탄소열선 전기요 일러스트">
-      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#FDEBD9"/><stop offset="55%" stop-color="#F8D9C0"/><stop offset="100%" stop-color="#F2C7AE"/>
-          </linearGradient>
-          <linearGradient id="blanket" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#F6A582"/><stop offset="100%" stop-color="#E4735C"/>
-          </linearGradient>
-          <linearGradient id="warmline" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stop-color="#F0603F" stop-opacity="0"/><stop offset="50%" stop-color="#D8402A" stop-opacity=".75"/><stop offset="100%" stop-color="#F0603F" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <clipPath id="blk1">
-          <path d="M150 104c0-11 6-17 18-17h206c12 0 18 6 18 17v40c0 12-8 16-20 14-30-5-52 4-78 0-26-4-46 3-70 0-14-2-22 0-30 0-28 0-44-1-44-14Z"/>
-        </clipPath>
-        <rect width="520" height="200" fill="url(#bg1)"/>
-        <circle cx="432" cy="34" r="48" fill="#FFF3E6" opacity=".6"/>
-        <circle cx="70" cy="172" r="60" fill="#FFF3E6" opacity=".45"/>
-        <!-- bed base -->
-        <rect x="126" y="140" width="286" height="46" rx="16" fill="#FFF6EA" stroke="#EBCFB4" stroke-width="2"/>
-        <rect x="126" y="140" width="286" height="46" rx="16" fill="none" stroke="#E7C6AA" stroke-width="1" opacity=".8"/>
-        <path d="M150 186v10M388 186v10" stroke="#D9B295" stroke-width="5" stroke-linecap="round"/>
-        <!-- pillow -->
-        <rect x="146" y="116" width="62" height="28" rx="14" fill="#FFFDF8" stroke="#EBD3BA" stroke-width="2"/>
-        <!-- heat waves -->
-        <g stroke="url(#warmline)" stroke-width="3.4" fill="none" stroke-linecap="round">
-          <path d="M232 82c10-11 22-11 32 0s22 11 32 0"/>
-          <path d="M240 64c8-9 18-9 26 0s18 9 26 0"/>
-          <path d="M248 47c6-7 14-7 20 0s14 7 20 0"/>
-        </g>
-        <!-- blanket draped over the bed -->
-        <g>
-          <path d="M150 112c0-13 7-19 19-19h205c12 0 18 6 18 19v34c0 12-8 16-20 14-30-5-52 4-78 0-26-4-46 3-70 0-26-4-44 0-56-2-10-1-18-4-18-14Z" fill="#C9563C" opacity=".16" transform="translate(0,6)"/>
-          <path d="M150 104c0-11 6-17 18-17h206c12 0 18 6 18 17v40c0 12-8 16-20 14-30-5-52 4-78 0-26-4-46 3-70 0-14-2-22 0-30 0-28 0-44-1-44-14Z" fill="url(#blanket)"/>
-          <g clip-path="url(#blk1)" stroke="#D25C42" stroke-width="1.4" opacity=".45">
-            <path d="M180 88v76M212 88v76M244 88v76M276 88v76M308 88v76M340 88v76M372 88v76"/>
-            <path d="M150 124h242M150 150h242"/>
-          </g>
-          <path d="M168 87h206c12 0 18 6 18 17v6c-14 4-30-3-48 0-26 4-46-3-70 0-26 4-52-3-78 0-14 2-26 0-32-1v-5c0-11 6-17 18-17Z" fill="#F9C6AC" opacity=".85"/>
-          <g stroke="#B94A33" stroke-width="3" stroke-linecap="round" opacity=".5">
-            <path d="M172 150v9M192 152v9M212 153v9M232 153v9M252 152v9M272 151v9M292 149v9M312 150v9M332 152v9M352 152v9M372 151v9"/>
-          </g>
-          <path d="M394 118c24 4 34 16 34 32" stroke="#8E5B4A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".5"/>
-          <rect x="418" y="150" width="22" height="15" rx="5" fill="#8E5B4A" opacity=".5"/>
-        </g>
-        <!-- snowflake badge -->
-        <g transform="translate(410,66)">
-          <circle r="26" fill="#fff" opacity=".92"/>
-          <g stroke="#3C8FBF" stroke-width="2.6" stroke-linecap="round">
-            <path d="M0-13V13M-11-6.5L11 6.5M-11 6.5L11-6.5"/>
-            <path d="M0-13l-3 4M0-13l3 4M0 13l-3-4M0 13l3-4" stroke-width="2.2"/>
-          </g>
-        </g>
-      </svg>
-      <span class="badge"><span class="num">62%</span> 할인</span>
+    <a class="thumb" href="https://link.coupang.com/a/i2s6w9rYjc" target="_blank" rel="noopener noreferrer sponsored" aria-label="밀스턴 PEVA 북극방풍비닐 쿠팡에서 보기">
+      <img src="img/windbreak.jpg" width="760" height="760" alt="밀스턴 PEVA 북극방풍비닐을 창문에 붙이는 모습" loading="eager" decoding="async">
+      <span class="badge"><span>44%</span> 할인</span>
       <span class="rank">1</span>
-    </div>
+    </a>
     <div class="body">
+      <p class="kicker">겨울 창문 외풍 차단</p>
       <h3 class="pname">
-        한일 탄소열선 전기요
-        <small>L 사이즈 135 × 180cm · 겨울 침대용</small>
+        밀스턴 PEVA 북극방풍비닐
+        <small>1.8 × 1.8m · 벨크로식 · EVA 0.16mm</small>
       </h3>
       <div class="price">
-        <span class="off">62%</span>
-        <span class="now">30,940원</span>
-        <span class="was">82,300원</span>
-        <span class="save">51,360원 절약</span>
+        <span class="now">14,800원</span>
+        <span class="was">27,000원</span>
+        <span class="save">쿠폰 적용가</span>
       </div>
       <div class="chips">
-        <span class="chip star">★ 평점 4.6</span>
-        <span class="chip">리뷰 7.8만</span>
-        <span class="chip">탄소열선</span>
-        <span class="chip">135 × 180cm</span>
+        <span class="chip star">★ 4.65</span>
+        <span class="chip">리뷰 1,554</span>
+        <span class="chip">1.8 × 1.8m</span>
+        <span class="chip">벨크로식</span>
+        <span class="chip">무료배송</span>
       </div>
       <ul class="points">
-        <li>리뷰 7.8만 개에 평점 4.6 — 겨울마다 가장 많이 팔리는 전기요입니다.</li>
-        <li>탄소열선이라 예열이 빠르고, 온도가 고르게 퍼집니다.</li>
-        <li>1인용보다 넉넉한 L 사이즈(135×180cm)로 침대에 깔기 좋습니다.</li>
+        <li>창틀에 벨크로로 붙이는 방식이라 못·나사 없이 10분이면 설치됩니다.</li>
+        <li>EVA 0.16mm 두께로 얇은 비닐보다 찢어짐이 적고, 겨울 내내 쓰기 좋습니다.</li>
+        <li>네이버는 14,900원, 쿠폰 적용 시 14,800원 — 쿠팡은 14,800원에 내일 도착합니다.</li>
       </ul>
-      <a class="cta coupang" href="https://link.coupang.com/a/iV2Pq375fo" target="_blank" rel="noopener noreferrer sponsored">
-        특가 보러가기
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="under">쿠팡에서 62% 할인가로 열립니다</span>
+      <div class="btns two">
+        <a class="cta coupang price2" href="https://link.coupang.com/a/i2s6w9rYjc" target="_blank" rel="noopener noreferrer sponsored">
+          <span>쿠팡</span><span class="pl">14,800원</span>
+        </a>
+        <a class="cta price2" href="https://naver.me/Gmp5yOBT" target="_blank" rel="noopener noreferrer sponsored">
+          <span>네이버</span><span class="pl">14,900원 · 쿠폰 14,800원</span>
+        </a>
+      </div>
+      <span class="under">가격·재고는 결제 화면에서 확인해 주세요</span>
     </div>
   </article>
 
-  <!-- ===== 2. 일리안 UV 스텐 무선 미니 가습기 ===== -->
+  <!-- ===== 2. 꿀템공장 끼우는 문풍지 ===== -->
   <article class="card">
-    <div class="thumb" role="img" aria-label="일리안 UV 스텐 무선 미니 가습기 일러스트">
-      <svg viewBox="0 0 520 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#E3F1F6"/><stop offset="60%" stop-color="#D6E9F0"/><stop offset="100%" stop-color="#C9E3EC"/>
-          </linearGradient>
-          <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#F7FAFB"/><stop offset="42%" stop-color="#DDE6EA"/><stop offset="70%" stop-color="#C3CFD5"/><stop offset="100%" stop-color="#E8EEF1"/>
-          </linearGradient>
-          <linearGradient id="mist" x1="0" y1="1" x2="0" y2="0">
-            <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="70%" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <rect width="520" height="200" fill="url(#bg2)"/>
-        <circle cx="96" cy="42" r="54" fill="#F2FAFD" opacity=".75"/>
-        <circle cx="452" cy="158" r="64" fill="#EAF6FB" opacity=".5"/>
-        <!-- mist plume -->
-        <g>
-          <g stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none" opacity=".9">
-            <path d="M246 74c-7-9-7-18 0-27s7-18 0-27"/>
-            <path d="M260 78c-7-9-7-18 0-27s7-18 0-27" opacity=".75"/>
-            <path d="M274 74c-7-9-7-18 0-27s7-18 0-27"/>
-          </g>
-          <g fill="#fff" opacity=".95">
-            <circle cx="232" cy="36" r="4.4"/><circle cx="256" cy="20" r="3.4"/>
-            <circle cx="280" cy="30" r="3"/><circle cx="292" cy="52" r="2.6"/>
-          </g>
-        </g>
-        <!-- nozzle -->
-        <rect x="238" y="78" width="44" height="12" rx="6" fill="#CBD8DE"/>
-        <rect x="238" y="78" width="44" height="5" rx="2.5" fill="#E7EEF1"/>
-        <!-- body -->
-        <rect x="206" y="86" width="108" height="88" rx="30" fill="url(#steel)" stroke="#A9BAC2" stroke-width="2.4"/>
-        <rect x="216" y="94" width="14" height="66" rx="7" fill="#fff" opacity=".7"/>
-        <rect x="206" y="86" width="108" height="18" rx="9" fill="#EAF1F4" opacity=".85"/>
-        <!-- water window -->
-        <rect x="278" y="112" width="26" height="50" rx="12" fill="#DCEBF2" stroke="#B9CBD4" stroke-width="1.6"/>
-        <path d="M280 138h22v22a11 11 0 0 1-22 0Z" fill="#7FC0E2" opacity=".75"/>
-        <path d="M280 138h22" stroke="#4E9BC4" stroke-width="1.6" opacity=".7"/>
-        <!-- UV glow -->
-        <g transform="translate(240,126)">
-          <circle r="24" fill="#7FB6E8" opacity=".16"/>
-          <circle r="15" fill="#8FC1EC" opacity=".3"/>
-          <circle r="8" fill="#5FA8E0" opacity=".8"/>
-          <g stroke="#8FC1EC" stroke-width="1.8" opacity=".75" stroke-linecap="round">
-            <path d="M-18-18l-6-6M0-23v-8M18-18l6-6M-21 0h-8M21 0h8M-18 18l-6 6M18 18l6 6"/>
-          </g>
-        </g>
-        <text x="240" y="156" text-anchor="middle" font-size="9.5" font-weight="800" fill="#7C919C" font-family="Pretendard,sans-serif" letter-spacing="1.6">UV</text>
-        <!-- base -->
-        <rect x="196" y="170" width="128" height="13" rx="6.5" fill="#A7B8C0"/>
-        <rect x="196" y="170" width="128" height="5" rx="2.5" fill="#C6D3D9"/>
-        <!-- droplet -->
-        <g transform="translate(150,120)" opacity=".75">
-          <path d="M0-18c7 9 13 16 13 22a13 13 0 0 1-26 0c0-6 6-13 13-22Z" fill="#5EA9D6"/>
-          <circle cx="-4" cy="6" r="2.8" fill="#fff" opacity=".85"/>
-        </g>
-        <!-- wireless -->
-        <g transform="translate(370,116)" stroke="#4E9BC4" stroke-width="3" fill="none" stroke-linecap="round">
-          <path d="M-16 2a22 22 0 0 1 30 0" opacity=".9"/>
-          <path d="M-9 11a13 13 0 0 1 16 0" opacity=".55"/>
-          <circle cx="-1" cy="20" r="2.6" fill="#4E9BC4" stroke="none"/>
-        </g>
-      </svg>
-      <span class="badge" style="background:linear-gradient(140deg,#3C8FBF,#276B93);box-shadow:0 6px 14px rgba(39,107,147,.26)">무선 · UV 살균</span>
+    <a class="thumb" href="https://naver.me/xfb7KSdq" target="_blank" rel="noopener noreferrer sponsored" aria-label="꿀템공장 끼우는 문풍지 네이버에서 보기">
+      <img src="img/doorstrip.jpg" width="760" height="760" alt="꿀템공장 끼우는 문풍지를 창틀에 끼우는 모습" loading="lazy" decoding="async">
+      <span class="badge">33% 할인</span>
       <span class="rank">2</span>
-    </div>
+    </a>
     <div class="body">
+      <p class="kicker">문틈 바람 막기</p>
       <h3 class="pname">
-        일리안 UV 스텐 무선 미니 가습기
-        <small>스테인리스 물통 · 살균 UV램프 · 책상 위 미니 사이즈</small>
+        꿀템공장 끼우는 문풍지
+        <small>두께 3mm · 길이 10m · 끼우는 방식</small>
       </h3>
       <div class="price">
-        <span class="now">39,000원</span>
+        <span class="now">5,900원</span>
+        <span class="save">쿠폰 적용 시 5,800원</span>
       </div>
       <div class="chips">
-        <span class="chip">리뷰 4,650</span>
-        <span class="chip">살균 UV램프</span>
-        <span class="chip">스텐 물통</span>
-        <span class="chip">무선 사용</span>
+        <span class="chip star">★ 4.63</span>
+        <span class="chip">리뷰 309</span>
+        <span class="chip">두께 3mm</span>
+        <span class="chip">길이 10m</span>
       </div>
       <ul class="points">
-        <li>스테인리스 물통에 살균 UV램프까지 — 물때 걱정을 줄인 가습기입니다.</li>
-        <li>무선이라 책상·침대 머리맡 어디로든 옮겨 놓을 수 있습니다.</li>
-        <li>리뷰 4,650개로 미니 가습기 중 반응이 꾸준한 모델입니다.</li>
+        <li>문틈에 끼우기만 하는 방식이라 접착제 자국이 남지 않습니다.</li>
+        <li>3mm 두께라 문이 닫힐 때 걸리적거림이 적습니다.</li>
+        <li>10m 한 롤로 창문·문 여러 곳에 쓸 수 있습니다.</li>
+        <li>배송비 3,000원이 따로 붙습니다 — 필요한 곳이 많다면 2개 이상 함께 사는 편이 낫습니다.</li>
       </ul>
-      <a class="cta" href="https://naver.me/xm0SKgUy" target="_blank" rel="noopener noreferrer sponsored">
-        특가 보러가기
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="under">네이버에서 39,000원에 열립니다</span>
+      <div class="btns">
+        <a class="cta price2" href="https://naver.me/xfb7KSdq" target="_blank" rel="noopener noreferrer sponsored">
+          <span>네이버에서 보기</span><span class="pl">5,900원 · 배송비 3,000원 별도</span>
+        </a>
+      </div>
+      <span class="under">이 상품은 네이버에서만 판매 중입니다</span>
+    </div>
+  </article>
+
+  <!-- ===== 3. 락앤락 대용량 텀블러 순수킹 1.2L ===== -->
+  <article class="card">
+    <a class="thumb" href="https://link.coupang.com/a/i19zjRP3iS" target="_blank" rel="noopener noreferrer sponsored" aria-label="락앤락 대용량 텀블러 쿠팡에서 보기">
+      <img src="img/tumbler.jpg" width="760" height="589" alt="락앤락 대용량 텀블러 순수킹 1.2L" loading="lazy" decoding="async">
+      <span class="badge">21% 할인</span>
+      <span class="rank">3</span>
+    </a>
+    <div class="body">
+      <p class="kicker">하루 물 한 통</p>
+      <h3 class="pname">
+        락앤락 대용량 텀블러 순수킹 1.2L
+        <small>손잡이 · 차망 포함 · 1.2L</small>
+      </h3>
+      <div class="price">
+        <span class="off">21%</span>
+        <span class="now">33,800원</span>
+      </div>
+      <div class="chips">
+        <span class="chip star">★ 4.92</span>
+        <span class="chip">리뷰 1,138</span>
+        <span class="chip">1.2L</span>
+        <span class="chip">손잡이</span>
+        <span class="chip">차망</span>
+      </div>
+      <ul class="points">
+        <li>1.2L 한 번 채우면 하루 물 양을 채울 수 있어 사무실·차 안에 두기 좋습니다.</li>
+        <li>손잡이가 있어 가득 채워도 들고 다니기 편합니다.</li>
+        <li>평점 4.92·리뷰 1,138개로 대용량 텀블러 중 만족도가 높은 모델입니다.</li>
+      </ul>
+      <div class="btns two">
+        <a class="cta coupang price2" href="https://link.coupang.com/a/i19zjRP3iS" target="_blank" rel="noopener noreferrer sponsored">
+          <span>쿠팡</span><span class="pl">33,800원</span>
+        </a>
+        <a class="cta price2" href="https://naver.me/5hoXn4gi" target="_blank" rel="noopener noreferrer sponsored">
+          <span>네이버</span><span class="pl">33,800원</span>
+        </a>
+      </div>
+      <span class="under">가격·재고는 결제 화면에서 확인해 주세요</span>
+    </div>
+  </article>
+
+  <!-- ===== 4. 이지유 크리스마스 어드벤트 캘린더 ===== -->
+  <article class="card">
+    <a class="thumb" href="https://link.coupang.com/a/i032gplRoy" target="_blank" rel="noopener noreferrer sponsored" aria-label="이지유 크리스마스 어드벤트 캘린더 쿠팡에서 보기">
+      <img src="img/advent.jpg" width="760" height="760" alt="이지유 크리스마스 어드벤트 캘린더 기프트 박스" loading="lazy" decoding="async">
+      <span class="badge alt">12월 카운트다운</span>
+      <span class="rank">4</span>
+    </a>
+    <div class="body">
+      <p class="kicker">12월 1일부터 하루 하나</p>
+      <h3 class="pname">
+        이지유 크리스마스 어드벤트 캘린더
+        <small>DIY 기프트 박스 · 1~24번 미니박스 24개</small>
+      </h3>
+      <div class="price">
+        <span class="now">26,900원</span>
+        <span class="was">30,000원</span>
+        <span class="save">무료배송</span>
+      </div>
+      <div class="chips">
+        <span class="chip star">★ 5.0 (네이버)</span>
+        <span class="chip">미니박스 24개</span>
+        <span class="chip">DIY</span>
+        <span class="chip">아이 선물</span>
+      </div>
+      <ul class="points">
+        <li>리본 손잡이가 달린 케이스형 박스에 1~24번 미니박스가 들어 있습니다.</li>
+        <li>12월 1일부터 하루에 하나씩 열어 크리스마스를 세는 방식입니다.</li>
+        <li>쿠팡은 내일 도착, 네이버는 12월 2일 도착 예정 — 대림절 시작(11/29)에 맞추려면 쿠팡이 빠릅니다.</li>
+        <li>네이버 평점 5.0·리뷰 11개, 쿠팡 평점 4.0·리뷰 16개(오늘 기준)입니다.</li>
+      </ul>
+      <div class="btns two">
+        <a class="cta coupang price2" href="https://link.coupang.com/a/i032gplRoy" target="_blank" rel="noopener noreferrer sponsored">
+          <span>쿠팡</span><span class="pl">26,900원 · 내일 도착</span>
+        </a>
+        <a class="cta price2" href="https://naver.me/xJclr2e4" target="_blank" rel="noopener noreferrer sponsored">
+          <span>네이버</span><span class="pl">26,900원 · 12/2 도착</span>
+        </a>
+      </div>
+      <span class="under">도착일은 주문 시점에 따라 달라집니다</span>
+    </div>
+  </article>
+
+  <!-- ===== 5. 런치버스 전기가열 보온도시락 ===== -->
+  <article class="card">
+    <a class="thumb" href="https://link.coupang.com/a/i0ylJTAj7Y" target="_blank" rel="noopener noreferrer sponsored" aria-label="런치버스 전기가열 보온도시락 쿠팡에서 보기">
+      <img src="img/lunchbox.jpg" width="760" height="760" alt="런치버스 전기가열 보온 도시락" loading="lazy" decoding="async">
+      <span class="badge alt">전기 가열</span>
+      <span class="rank">5</span>
+    </a>
+    <div class="body">
+      <p class="kicker">따뜻한 점심</p>
+      <h3 class="pname">
+        런치버스 전기가열 보온도시락
+        <small>600ml · 304 스테인리스 · USB 5V 3A</small>
+      </h3>
+      <div class="price">
+        <span class="now">21,750원</span>
+        <span class="was">27,900원</span>
+        <span class="save">쿠팡 기준</span>
+      </div>
+      <div class="chips">
+        <span class="chip star">★ 4.76 (네이버)</span>
+        <span class="chip">리뷰 622</span>
+        <span class="chip">600ml</span>
+        <span class="chip">304 스텐</span>
+        <span class="chip">무료배송</span>
+      </div>
+      <ul class="points">
+        <li>USB 전원(5V 3A)으로 데우는 방식이라 사무실·차 안에서도 따뜻하게 먹을 수 있습니다.</li>
+        <li>304 스테인리스 3중 구조에 600ml 용량 — 밥과 반찬 한 끼가 들어갑니다.</li>
+        <li>본체·뚜껑·숟가락·USB 케이블 구성이고, 전자레인지·식기세척기에는 넣을 수 없습니다.</li>
+      </ul>
+      <div class="btns two">
+        <a class="cta coupang price2" href="https://link.coupang.com/a/i0ylJTAj7Y" target="_blank" rel="noopener noreferrer sponsored">
+          <span>쿠팡</span><span class="pl">21,750원</span>
+        </a>
+        <a class="cta price2" href="https://naver.me/GGGzXbdI" target="_blank" rel="noopener noreferrer sponsored">
+          <span>네이버</span><span class="pl">22,900원</span>
+        </a>
+      </div>
+      <span class="under">가격·재고는 결제 화면에서 확인해 주세요</span>
     </div>
   </article>
 
   <div class="notice">
     <strong>누르기 전에 한 가지만 확인해 주세요</strong>
-    <p>가격·재고·배송 조건은 시간이 지나면 달라질 수 있어요. 결제 화면에서 최종 금액을 꼭 확인해 주세요. 쿠팡 상품은 로켓배송 여부에 따라 도착일이 달라집니다.</p>
+    <p>가격·재고·배송 조건은 시간이 지나면 달라질 수 있어요. 결제 화면에서 최종 금액을 꼭 확인해 주세요. 쿠팡 상품은 로켓배송 여부에 따라 도착일이 달라지고, 네이버 상품은 쿠폰 적용 여부에 따라 결제 금액이 달라집니다.</p>
   </div>
 
   <footer>
     <div class="disclosure">
       <b>대가성 안내</b><br>
-      이 페이지의 링크는 쿠팡 파트너스 및 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 일정액의 수수료를 제공받습니다.
+      이 페이지의 링크는 쿠팡 파트너스 및 네이버 쇼핑 커넥트 활동의 일환으로, 구매 발생 시 일정액의 수수료를 제공받습니다. 상품 가격에는 영향을 주지 않습니다.
     </div>
-    <div class="copy">살림픽 · 오늘의 특가 모음</div>
+    <div class="copy">살림픽 · 오늘의 특가 모음 · 2026. 11. 28</div>
   </footer>
 
 </div>
